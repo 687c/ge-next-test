@@ -89,3 +89,6 @@ export default function Home() {
     </main>
   )
 }
+
+
+//  query to fetch the data 
