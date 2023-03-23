@@ -17,7 +17,6 @@ import { getOfficialSite } from "@/lib/utils";
 
 import { useState } from "react";
 
-
 function paginate(items: any[], currentPage: number, pageSize: number) {
     const totalCount = items.length;
     const pageCount = Math.ceil(totalCount / pageSize);
@@ -100,8 +99,7 @@ export default function ClientView({ media }: { media: any[] }) {
                     </Box>
 
                     <Box display="flex" justifyContent="right" my={4}>
-                        <Button onClick={() => page > 1 ? setPage(page => page - 1) : ""}>
-
+                        <Button mr="10" onClick={() => page > 1 ? setPage(page => page - 1) : ""}>
                             Previous
                         </Button>
 
